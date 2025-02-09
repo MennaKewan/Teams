@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ By Categories</title>
+    <link rel="stylesheet" href="Mcq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="categories-screen" class="screen">
+      <div class="twoteam">
+        <div class="team-left" onclick="selectTeam('Team 1')">
+          <div class="teamname" id="team1-name">Team 1</div>
+          <div class="score" id="team1-score">0 Points</div>
+        </div>
+
+        <div class="return1" onclick="finishGame()">Finish</div>
+
+        <div class="team-right" onclick="selectTeam('Team 2')">
+          <div class="teamname" id="team2-name">Team 2</div>
+          <div class="score" id="team2-score">0 Points</div>
+        </div>
+      </div>
+      <h2>Menu</h2>
+      <div class="categories-container">
+        <!-- First Category: old is gold -->
+        <div class="category-column">
+          <h3>Old is Gold</h3>
+          <button
+            class="question-btn"
+            data-category="Old is Gold"
+            data-points="10"
+            onclick="startQuestion(10, 'Old is Gold')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Old is Gold"
+            data-points="30"
+            onclick="startQuestion(30, 'Old is Gold')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Old is Gold"
+            data-points="50"
+            onclick="startQuestion(50, 'Old is Gold')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Old is Gold"
+            data-points="70"
+            onclick="startQuestion(70, 'Old is Gold')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Second Category: under the microscope -->
+        <div class="category-column">
+          <h3>Under the Microscope</h3>
+          <button
+            class="question-btn"
+            data-category="Under the Microscope"
+            data-points="10"
+            onclick="startQuestion(10, 'Under the Microscope')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Under the Microscope"
+            data-points="30"
+            onclick="startQuestion(30, 'Under the Microscope')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Under the Microscope"
+            data-points="50"
+            onclick="startQuestion(50, 'Under the Microscope')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Under the Microscope"
+            data-points="70"
+            onclick="startQuestion(70, 'Under the Microscope')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Third Category: around the world -->
+        <div class="category-column">
+          <h3>Around the World</h3>
+          <button
+            class="question-btn"
+            data-category="Around the World"
+            data-points="10"
+            onclick="startQuestion(10, 'Around the World')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Around the World"
+            data-points="30"
+            onclick="startQuestion(30, 'Around the World')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Around the World"
+            data-points="50"
+            onclick="startQuestion(50, 'Around the World')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Around the World"
+            data-points="70"
+            onclick="startQuestion(70, 'Around the World')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Fourth Category: KSAU League -->
+        <div class="category-column">
+          <h3>KSAU League</h3>
+          <button
+            class="question-btn"
+            data-category="KSAU League"
+            data-points="10"
+            onclick="startQuestion(10, 'KSAU League')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="KSAU League"
+            data-points="30"
+            onclick="startQuestion(30, 'KSAU League')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="KSAU League"
+            data-points="50"
+            onclick="startQuestion(50, 'KSAU League')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="KSAU League"
+            data-points="70"
+            onclick="startQuestion(70, 'KSAU League')"
+          >
+            70 Points
+          </button>
+        </div>
+
+        <!-- Fifth Category: beyond the screen -->
+        <div class="category-column">
+          <h3>Beyond the Screen</h3>
+          <button
+            class="question-btn"
+            data-category="Beyond the Screen"
+            data-points="10"
+            onclick="startQuestion(10, 'Beyond the Screen')"
+          >
+            10 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Beyond the Screen"
+            data-points="30"
+            onclick="startQuestion(30, 'Beyond the Screen')"
+          >
+            30 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Beyond the Screen"
+            data-points="50"
+            onclick="startQuestion(50, 'Beyond the Screen')"
+          >
+            50 Points
+          </button>
+          <button
+            class="question-btn"
+            data-category="Beyond the Screen"
+            data-points="70"
+            onclick="startQuestion(70, 'Beyond the Screen')"
+          >
+            70 Points
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="question-screen" class="screen">
+      <div class="back-to-categories">
+        <a href="#" onclick="goBackToCategories()">Back to Categories</a>
+      </div>
+      <div class="timer-container">
+        <div class="timer">
+          <div class="clock" id="clock">30</div>
+        </div>
+      </div>
+      <div id="question-container" class="question-container"></div>
+    </div>
+
+    <script src="Mcq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
